@@ -1,5 +1,5 @@
 class Account:
-    def __init__(self, bal, acc_no):
+    def __init__(self, acc_no, bal):
         self.balance = bal
         self.account_no = acc_no
     
@@ -20,7 +20,7 @@ class Account:
     def get_balance(self):
         return self.balance
 
-acc1 = Account(1000000000, 707045)
+acc1 = Account(input("Enter account number:" ),input("Enter balance:" ))
 acc1.holder(input("please provide the name of account holder: "))
 acc1.debit(int(input("enter your amount" )))
 acc1.credit(50000)
