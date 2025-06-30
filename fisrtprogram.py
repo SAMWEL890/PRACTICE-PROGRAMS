@@ -20,10 +20,10 @@ class Account:
     def get_balance(self):
         return self.balance
 
-acc1 = Account(input("Enter account number:" ),input("Enter balance:" ))
+acc1 = Account(input("Enter account number:" ),int(input("Enter balance:" )))
 acc1.holder(input("please provide the name of account holder: "))
-acc1.debit(int(input("enter your amount" )))
-acc1.credit(50000)
+acc1.debit(int(input("enter your debiting amount: ")))
+acc1.credit(int(input("Enter your crediting amount:" )))
 print(f"Total remaining balance in account {acc1.account_no} is {acc1.get_balance()}")
 print(f"THANKS FOR JOINING US")
 
