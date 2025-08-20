@@ -155,7 +155,28 @@ dec = Button(btn_4,
 dec.pack(side=LEFT)
 eql = Button(btn_4,
              text = "=",
+             command=calculate,
              font=("Arial",20,"bold"),
              bd=10)
 eql.pack(side=LEFT)
+
+text = text(btn_4,
+             font = ('Arial',28,'bold'),
+             )
+text.pack(side = bottom)
+
+def calculate():
+     try:
+         expression= text.get("1.0", END).strip()
+         result=eval(expression)
+         text.delete("1.0", END)
+         text.insert(END, str(result))
+     except Exception:
+         text.delete("1.0",END)
+         text.insert(END, "INVALID BRO")
+
+
+
+
+
 wd.mainloop()
