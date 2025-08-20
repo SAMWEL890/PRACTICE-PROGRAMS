@@ -1,1 +1,161 @@
-happy 
+from tkinter import *
+
+wd = Tk()
+wd.title("Harsh Tiwari")
+wd.geometry("420x420")
+wd.config(bg="#CEF5F5")
+
+# MAIN LABEL
+lbl = Label(wd,
+            bg="#CEF5D3",
+            text = "CALCULATOR",
+            padx=10,
+            font=("Arial",40,"bold"),
+            relief="raised")
+lbl.pack(pady=10)
+
+# BUTTON FRAME
+btn_0 = Frame(wd,
+            bg="grey",
+            relief="raised")
+btn_0.pack()
+clear = Button(btn_0,
+             text = "C",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+clear.pack(side=LEFT)
+modu = Button(btn_0,
+             text="%",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+modu.pack(side=LEFT)
+dlt = Button(btn_0,
+             text = "D",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+dlt.pack(side=LEFT)
+dvd = Button(btn_0,
+             text = "/",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+dvd.pack(side=LEFT)
+
+btn_1 = Frame(wd,
+            bg="grey",
+            relief="raised")
+btn_1.pack()
+one = Button(btn_1,
+             text = "1",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+one.pack(side=LEFT)
+two = Button(btn_1,
+             text="2",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+two.pack(side=LEFT)
+three = Button(btn_1,
+             text = "3",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+three.pack(side=LEFT)
+sum = Button(btn_1,
+             text = "+",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+sum.pack(side=LEFT)
+
+btn_2 = Frame(wd,
+            bg="grey",
+            relief="raised")
+btn_2.pack()
+four = Button(btn_2,
+             text="4",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+four.pack(side=LEFT)
+five = Button(btn_2,
+             text = "5",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+five.pack(side=LEFT)
+six = Button(btn_2,
+             text="6",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+six.pack(side=LEFT)
+mul = Button(btn_2,
+             text = "*",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+mul.pack(side=LEFT)
+
+btn_3 = Frame(wd,
+            bg="grey",
+            relief="raised")
+btn_3.pack()
+seven = Button(btn_3,
+             text = "7",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+seven.pack(side=LEFT)
+eight = Button(btn_3,
+             text="8",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+eight.pack(side=LEFT)
+nine = Button(btn_3,
+             text = "9",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+nine.pack(side=LEFT)
+sub = Button(btn_3,
+             text = "-",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+sub.pack(side=LEFT)
+
+btn_4 = Frame(wd,
+            bg="grey",
+            relief="raised")
+btn_4.pack()
+zero2= Button(btn_4,
+             text="00",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+zero2.pack(side=LEFT)
+zero = Button(btn_4,
+             text="0",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+zero.pack(side=LEFT)
+dec = Button(btn_4,
+             text=".",
+             font=("Arial",20,"bold"),
+             bd=10,
+             padx=10)
+dec.pack(side=LEFT)
+eql = Button(btn_4,
+             text = "=",
+             font=("Arial",20,"bold"),
+             bd=10)
+eql.pack(side=LEFT)
+wd.mainloop()
