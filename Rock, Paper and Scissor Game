@@ -1,0 +1,111 @@
+from tkinter import *
+import random
+
+wd = Tk()
+wd.geometry("420x420")
+wd.title("Harsh Tiwari")
+wd.config(background="skyblue",border=2)
+
+#LOGIC PART
+user_choice = StringVar()
+result_text = StringVar()
+comp_choice = StringVar()
+
+
+def play(choice):
+    options = ["Rock", "Paper", "Scissor"]
+    comp = random.choice(options)
+    user_choice.set(f"You choose: {choice}")
+    comp_choice.set(f"computer choose: {comp}")
+    if choice == comp:
+        result = "It's a Tie!"
+    elif (choice == "Rock" and comp == "Scissor") or \
+         (choice == "Paper" and comp == "Rock") or \
+         (choice == "Scissor" and comp == "Paper"):
+        result = "You Win!"
+    else:
+        result = "Computer Wins!"
+    result_text.set(result)
+
+
+lbl = Label(wd,
+            text = "Rock, Paper and Scissor Game",
+            fg="black",
+            bg="#BEF46E",
+            font=("Arial",40,"bold"),
+            relief="ridge",
+            padx=10,
+            bd=10)
+lbl.pack()
+
+# BUTTONS PART
+
+btn_frame = Frame(wd, bg="skyblue")
+btn_frame.pack(pady=20)
+btn_rock = Button(btn_frame,
+             text="Rock",
+            fg="yellow",
+            bg="#77A2F2",
+            font=("Arial",20,"bold"),
+            activebackground="skyblue",
+            relief="raised",
+            padx=10,
+            command=lambda: play("Rock"),)
+btn_rock.pack(padx=10,side=LEFT)
+
+btn_paper = Button(btn_frame,
+             text="Paper",
+            fg="yellow",
+            bg="#77A2F2",
+            font=("Arial",20,"bold"),
+            activebackground="skyblue",
+            relief="raised",
+
+            padx=10,
+            command=lambda: play("Paper"),)
+btn_paper.pack(padx=10,side=LEFT)
+
+btn_Scissor = Button(btn_frame,
+             text="Scissor",
+            fg="yellow",
+            bg="#77A2F2",
+            font=("Arial",20,"bold"),
+            activebackground="skyblue",
+            relief="raised",
+            padx=10,
+            command=lambda: play("Scissor"),)
+btn_Scissor.pack(padx=10,side=LEFT)
+
+# RESULT PART
+
+result_frame = Frame(wd,
+                     bg="grey")
+result_frame.pack()
+user_lbl = Label(result_frame,
+                 textvariable=user_choice,
+                 bg="skyblue",
+                 fg="black",
+                 font = ("Arial",20,"bold"),
+                 padx=20,
+                 bd=10)
+user_lbl.pack(pady = 10,side=LEFT)
+
+comp_lbl = Label(result_frame,
+                 textvariable=comp_choice,
+                 bg="skyblue",
+                 fg="black",
+                 font = ("Arial",20,"bold"),
+                 padx=20,
+                 bd=10)
+comp_lbl.pack(pady = 10,side=LEFT)
+
+result_lbl = Label(wd,
+                 textvariable=result_text,
+                 bg="#7A97F5",
+                 fg="black",
+                 font = ("Arial",20,"bold"),
+                 padx=20,
+                 bd=10)
+result_lbl.pack(pady=10)
+
+wd.mainloop()
