@@ -1,6 +1,5 @@
-.
 
-👋 Hi, I’m Harsh Tiwari
+<h1>👋 Hi, I’m Harsh Tiwari</h1>
 🚀 About Me
 
 🎓 First-year student in Artificial Intelligence & Data Science
@@ -11,7 +10,7 @@
 
 ⚡ Fun fact: I enjoy turning data into meaningful insights 📊
 
-🛠️ Languages & Tools
+<h2>🛠️ Languages & Tools</h2>
 
 Programming: Python 🐍
 
@@ -21,7 +20,7 @@ Other Tools: Git, VS Code, Jupyter Notebook
 
 📊 GitHub Stats
 
-📫 Connect With Me
+<h2>📫 Connect With Me</h2>
 
 GitHub: @Harsh-Tiwari
 
