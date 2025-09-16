@@ -1,6 +1,8 @@
 
 <h1>👋 Hi, I’m Harsh Tiwari</h1>
-🚀 About Me
+
+
+<h3>🚀 About Me</h3>
 
 
 💻 Skilled in Python and libraries like NumPy, Pandas, Matplotlib, Seaborn, Tkinter
